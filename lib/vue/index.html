@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no" />
+	<title>行程助手</title>
+</head>
+<body>
+	<script type="text/javascript" src="http://192.168.12.191:9999/trip-assistant/lib/fan/v.2/index.js"></script>
+	<script type="text/javascript">
+		momo.config({
+			base: "http://192.168.12.191:9999/trip-assistant"
+		});
+		momo.version("lib", {
+			"f7": "v.0",
+			"async": "v.0",
+			"vue": "v.0",
+			"util": "v.0",
+			"page": "v.0",
+			"service": "v.0",
+			"router": "v.0",
+			"score": "v.0"
+		});
+		momo.version("pages", {
+			"main": "v.0",
+			"order-list": "v.0",
+			"login": "v.0",
+			"trip": "v.0",
+			"comment": "v.0"
+		});
+		momo.version("service", {
+			"user": "v.0",
+			"order": "v.0",
+			"tour": "v.0"
+		});
+		momo.use("pages:main", function(main){
+			main();
+		});
+	</script>
+</body>
+</html> 

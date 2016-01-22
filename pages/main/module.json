@@ -1,0 +1,10 @@
+{
+	"name": "main",
+	"group": "pages",
+	"version": "0.0.0",
+	"module-type": "module",
+	"entries": [
+		"index.js",
+		"iconfont/*"
+	]
+}
